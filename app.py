@@ -42,4 +42,4 @@ print(
           https://github.com/krishaayjois21/Quintex
     '''
 )
-app.run()
+app.run(port=port,host='0.0.0.0')
