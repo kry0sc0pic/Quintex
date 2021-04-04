@@ -2,10 +2,10 @@ from api import Tokens
 from flask import Flask , send_file
 from flask_restful import Api
 import os
-app = Flask("Token Logger")
+app = Flask("Quintex")
 api = Api(app)
 port = os.environ.get('PORT')
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 api.add_resource(Tokens , '/tokens')
 
 @app.route('/files/<filename>')
