@@ -1,5 +1,5 @@
 from api import Tokens
-from flask import Flask , send_file
+from flask import Flask , send_file , render_template
 from flask_restful import Api
 import os
 app = Flask("Quintex")
@@ -7,6 +7,10 @@ api = Api(app)
 port = os.environ.get('PORT')
 __version__ = '1.0.1'
 api.add_resource(Tokens , '/tokens')
+
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 @app.route('/files/<filename>')
 def logger(filename):
@@ -26,6 +30,7 @@ def logger(filename):
         </div>
         """ , 404
     
+
 
 
 print(
