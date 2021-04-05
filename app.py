@@ -43,7 +43,7 @@ print(
      ╚══▀▀═╝  ╚═════╝ ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝                                                  
     
                     By @krishaayjois21
-                         v1.0.0
+                         v{__version__}
           https://github.com/krishaayjois21/Quintex
     '''
 )
