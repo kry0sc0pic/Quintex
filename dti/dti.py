@@ -103,6 +103,7 @@ def validateTokens(tokens):
         valid = tokenValid(t)
         if valid:
             validTokens.append(t)
+    validTokens = list(set(validTokens))
     return validTokens
 
 
@@ -160,4 +161,3 @@ def sendTokens(tokens):
         print('failes')
 
 
-# TODO Implement removal of duplicates
